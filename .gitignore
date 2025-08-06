@@ -1,0 +1,18 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Ignore temporary/backup files
+*.swp
+*.swo
+*~
+
+# Optional: ignore any credentials or config if you test SQL locally
+.env
+*.db
+*.sqlite
