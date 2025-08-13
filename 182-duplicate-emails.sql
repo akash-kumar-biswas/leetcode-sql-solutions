@@ -1,3 +1,3 @@
 /* Write your PL/SQL query statement below */
 
-select distinct p1.email from Person p1, Person p2 where p1.id <> p2.id and p1.email = p2.email;
+select email from Person group by email having count(distinct id) > 1;
