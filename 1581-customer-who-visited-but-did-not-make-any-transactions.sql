@@ -1,0 +1,2 @@
+/* Write your PL/SQL query statement below */
+select customer_id, count(customer_id) as count_no_trans from ((select visit_id, customer_id  from Visits) minus (select v.visit_id , v.customer_id from Visits v inner join Transactions t on  v.visit_id = t.visit_id)) group by customer_id;
